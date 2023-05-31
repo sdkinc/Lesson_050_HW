@@ -25,7 +25,7 @@ public class Main {
     System.out.println("Before:" + set.size());
     Set<Integer> copy = new HashSet<>(set);
     for (Integer in : copy) {
-      if (in % 2 == 0) {
+      if (in % 2 != 0) {
         set.remove(in);
       }
     }
